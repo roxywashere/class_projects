@@ -70,11 +70,16 @@
     background-color: #F4811B;
  }
 
+
  main h2 {
     text-align: center;
-    color: #293C73;
+    color: #F4811B;
  }
 
+ main h3 {
+   text-align: center;
+   color: #F4811B;
+ }
  .multi_col {
     display: flex;
  }
@@ -97,8 +102,4 @@
  section img {
     border-radius: 10px;
     border: 2px solid #830E26;
- }
-
- footer {
-
  }
