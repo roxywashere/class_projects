@@ -1,0 +1,28 @@
+ /* Global Styles */
+
+ body {
+    background-color: antiquewhite;
+ }
+
+ img {
+    display:block;
+    margin: 0 auto;
+    width: 100%;
+ }
+
+ a {
+    color: cornflowerblue;
+ }
+
+ a:hover {
+    text-decoration: none;
+ }
+
+ /* Mobile Styles */
+
+ header {
+    background-image: url("../images/prs1.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+ }
