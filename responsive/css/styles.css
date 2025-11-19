@@ -11,7 +11,7 @@
  }
 
  a {
-    color: cornflowerblue;
+    color: darkslategray;
  }
 
  a:hover {
@@ -20,9 +20,29 @@
 
  /* Mobile Styles */
 
- header {
-    background-image: url("../images/prs1.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 50px;
+ #container {
+   border: 4px solid darkslategray ;
+   
+ }
+
+ nav {
+   text-align: center;
+ }
+
+ nav ul {
+   padding: 0;
+   list-style-type: none;
+ }
+
+ nav li {
+   display: block;
+ }
+
+ nav li a {
+   display:block;
+   background-color: cadetblue;
+   height: 20px;
+   line-height: 20px;
+   text-decoration: none;
+   font-size:15px ;
  }
