@@ -74,6 +74,18 @@
   text-align: center;
  }
 
+ .contact_context {
+  text-align: center;
+ }
+ 
+ section,
+ aside {
+   border: 4px solid cornflowerblue;
+   margin: 10px;
+   padding: 10px;
+   border-radius: 10px;
+ }
+
  /* Tablet Styles */
 
  @media (min-width: 768px) {
@@ -104,5 +116,21 @@
     width: 65%;
     margin: 20px auto;
     background-color: cadetblue;
+  }
+
+  .gallery {
+    display: flex;
+  }
+
+  .multi_col {
+    display: flex;
+  }
+
+  .home_section {
+    width: 70%;
+  }
+
+  .home_aside {
+    width: 30%;
   }
  }
