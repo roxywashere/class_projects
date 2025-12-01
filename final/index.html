@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Art Portfolio &mdash; Home</title>
-<link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <nav>
-            <h1 class="site-title">My Portfolio &copy;</h1>
+            <h1 class="site-title">Portfolio </h1>
             <ul class="nav-links">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="art.html">Art</a></li>
@@ -21,14 +22,40 @@
     </header>
 
     <main>
-        <section class="hero-simple">
-            <h2>Welcome to My Creative Space</h2>
-            <p>Exploring art, crafts, &amp; photography &mdash; Creating meaningful work since 2020</p>
+        <div class="hero-banner">
+            <img src="sunflower.jpg" alt="Sunflower field" class="banner-image">
+            <div class="banner-overlay"></div>
+            <div class="banner-content">
+                <h1 class="banner-name">Roxy Mohr</h1>
+                <p class="banner-subtitle">Art &bull; Crafts &bull; Photography</p>
+                <p class="banner-quote">"what is done in love is done well"</p>
+                <p class="banner-author">&mdash; -Vincent van Gogh</p>
+            </div>
+        </div>
+
+        <section class="inspiration-section">
+            <h3 class="section-heading">What Inspires Me &rarr;</h3>
+            
+            <div class="inspiration-content">
+                <div class="inspiration-intro">
+                    <p>I love creating whether it is painting, taking photos on 35mm camera, or using my hands to make something from scratch. I love it all. I dream to connect people through the magic of story-telling that is art. I want to get more into filming and profesional photography. Follow along with me on my journey! Check out my pinterest, to see what inspires me, and listen along to some inspirational songs.</p>
+                </div>
+
+                <div class="inspiration-dual-grid">
+
+                    <div class="pinterest-cta">
+                        <a href="https://www.pinterest.com/roxyravioli/" target="_blank" class="pinterest-btn">
+                            View Pinterest &rarr;
+                        </a>
+                    </div>
+                    <div class="playlist-card">
+                        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4Zbu1bgOj1cNJICcECzMcw?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
         </section>
 
-        <!-- 3 Column Preview Layout -->
+
         <section class="home-preview">
-            <h3 class="section-heading">Explore My Work &rarr;</h3>
+            <h3 class="section-heading">take a look! &rarr;</h3>
             <div class="preview-grid">
                 <div class="preview-item">
                     <a href="art.html">
@@ -57,32 +84,45 @@
                     </a>
                 </div>
             </div>
-        </section>
 
-        <!-- 2 Column Info Section -->
-        <section class="info-section">
-            <div class="info-grid">
-                <div class="info-column">
-                    <h4>What I Do</h4>
-                    <ul class="feature-list">
-                        <li>&#10003; Original paintings &amp; drawings</li>
-                        <li>&#10003; Handmade crafts &amp; DIY projects</li>
-                        <li>&#10003; Professional photography</li>
-                        <li>&#10003; Custom commissions available</li>
-                    </ul>
+
+         <section class="featured-photos">
+            
+            <h3 class="section-heading">my recent photos &rarr;</h3>
+            <div class="photo-showcase">
+                <div class="photo-item">
+                    <img src="sunflores.jpg" alt="sunflower field">
                 </div>
-                <div class="info-column">
-                    <h4>Get Started</h4>
-                    <p>Browse through my galleries to see my latest work. Each piece is created with passion &amp; attention to detail.</p>
-                    <p><a href="contact.html" class="text-link">Contact me &rarr;</a> for inquiries, commissions, or collaborations.</p>
+                <div class="photo-item">
+                    <img src="car1.jpg" alt="drfiting">
+                </div>
+                <div class="photo-item">
+                    <img src="city.jpg" alt="nyc">
+                </div>
+                <div class="photo-item">
+                    <img src="raincity.jpg" alt="concert">
                 </div>
             </div>
         </section>
+   
+
+        </section>
+        <section class="info-section">
+            <div class="info-grid">
+                <div class="info-column">
+                    <h4>what I create</h4>
+                    <ul class="feature-list">
+                        <li>oil and watercolor paintings</li>
+                        <li>diy concert shirts </li>
+                        <li>film photography of my travels and loved ones </li>
+                        <li>and so much more...</li>
+                    </ul>
+
     </main>
 
     <footer>
-        <p>&copy; 2024 My Art Portfolio &bull; All Rights Reserved</p>
-        <p>Designed with &#9829; &amp; creativity</p>
+          <p>&copy; 2025 Roxy Mohr Portfolio &bull; All Rights Reserved</p>
+           <p>Made with &#9829;</p>
     </footer>
 </body>
 </html>

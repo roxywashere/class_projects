@@ -1,5 +1,5 @@
-/* ENHANCED MINIMALIST PORTFOLIO */
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -67,7 +67,7 @@ nav {
     border-bottom-color: #1a1a1a;
 }
 
-/* MAIN */
+
 main {
     max-width: 1400px;
     margin: 0 auto;
@@ -75,7 +75,6 @@ main {
     min-height: calc(100vh - 200px);
 }
 
-/* HERO */
 .hero-simple {
     text-align: left;
     padding: 6rem 4rem;
@@ -101,7 +100,152 @@ main {
     max-width: 700px;
 }
 
-/* SECTION HEADINGS */
+.hero-banner {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 6rem;
+}
+
+.banner-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.65);
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.3) 50%,
+        rgba(0, 0, 0, 0.4) 100%
+    );
+}
+
+.banner-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #f5f1e8;
+    padding: 2rem;
+    max-width: 1000px;
+}
+
+.banner-name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5rem;
+    font-weight: 300;
+    letter-spacing: 0.25em;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    color: #f5f1e8;
+    text-shadow: 2px 4px 12px rgba(0, 0, 0, 0.7);
+    line-height: 1.2;
+}
+
+.banner-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #d4a574;
+    margin-bottom: 3rem;
+    text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.banner-quote {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    color: #f5f1e8;
+    text-shadow: 2px 3px 10px rgba(0, 0, 0, 0.8);
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.banner-author {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.95rem;
+    margin-top: 1.5rem;
+    color: #d4a574;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+
+@media (max-width: 1024px) {
+    .banner-name {
+        font-size: 4rem;
+        letter-spacing: 0.2em;
+    }
+    .banner-quote {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-banner {
+        height: 500px;
+    }
+    .banner-name {
+        font-size: 3rem;
+        letter-spacing: 0.15em;
+    }
+    .banner-subtitle {
+        font-size: 0.9rem;
+        letter-spacing: 0.2em;
+        margin-bottom: 2rem;
+    }
+    .banner-quote {
+        font-size: 1.4rem;
+    }
+    .banner-author {
+        font-size: 0.85rem;
+        letter-spacing: 0.15em;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-banner {
+        height: 450px;
+    }
+    .banner-name {
+        font-size: 2.2rem;
+        letter-spacing: 0.1em;
+    }
+    .banner-subtitle {
+        font-size: 0.75rem;
+        letter-spacing: 0.15em;
+        margin-bottom: 1.5rem;
+    }
+    .banner-quote {
+        font-size: 1.2rem;
+    }
+    .banner-author {
+        font-size: 0.75rem;
+        margin-top: 1rem;
+    }
+}
+
 .section-heading {
     font-size: 1.75rem;
     margin-bottom: 3rem;
@@ -112,7 +256,7 @@ main {
     border-bottom: 2px solid #e8e8e8;
 }
 
-/* 3 COLUMN PREVIEW GRID */
+
 .home-preview {
     margin: 6rem 0;
 }
@@ -135,7 +279,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: #4a4a4a;
     transition: all 0.4s ease;
     border-radius: 8px;
     position: relative;
@@ -190,7 +334,7 @@ main {
     z-index: 1;
 }
 
-/* 2 COLUMN INFO */
+
 .info-section {
     margin: 6rem 0;
     padding: 4rem;
@@ -243,7 +387,6 @@ main {
     border-bottom-color: #667eea;
 }
 
-/* PAGE HEADER */
 .page-header {
     text-align: left;
     padding: 4rem 0 3rem 0;
@@ -265,7 +408,6 @@ main {
     font-weight: 300;
 }
 
-/* GALLERY */
 .gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -287,48 +429,8 @@ main {
     border-color: #667eea;
 }
 
-.artwork {
-    height: 350px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-}
 
-.artwork-label {
-    position: absolute;
-    top: 1.5rem;
-    left: 1.5rem;
-    background-color: #ffffff;
-    padding: 0.5rem 1.5rem;
-    font-size: 0.75rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    border-radius: 20px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
 
-.gallery-info {
-    padding: 1.5rem;
-    background: #ffffff;
-}
-
-.artwork-title {
-    font-weight: 500;
-    color: #1a1a1a;
-    font-size: 1.1rem;
-    margin-bottom: 0.5rem;
-}
-
-.artwork-desc {
-    font-size: 0.875rem;
-    color: #666;
-    font-weight: 300;
-}
-
-/* CONTACT */
 .contact-section {
     max-width: 1200px;
     margin: 4rem auto;
@@ -342,7 +444,7 @@ main {
 }
 
 .contact-box {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: #474a57;
     padding: 3rem 2rem;
     border-radius: 8px;
     text-align: center;
@@ -356,11 +458,11 @@ main {
 }
 
 .contact-box:nth-child(2) {
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    background: #fbdf93
 }
 
 .contact-box:nth-child(3) {
-    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    background: #9ba3c9
 }
 
 .contact-box h3 {
@@ -384,7 +486,6 @@ main {
     text-decoration: none;
 }
 
-/* 2 COLUMN CONTACT */
 .contact-layout {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -441,7 +542,7 @@ main {
 }
 
 .submit-btn {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background:  #ffffff;
     color: #ffffff;
     padding: 1rem 3rem;
     border: none;
@@ -513,7 +614,6 @@ main {
     transform: translateX(4px);
 }
 
-/* FOOTER */
 footer {
     background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
     color: #ffffff;
@@ -529,7 +629,7 @@ footer p {
     opacity: 0.9;
 }
 
-/* RESPONSIVE */
+
 
 @media (max-width: 1024px) {
     nav {
@@ -593,56 +693,290 @@ footer p {
     }
 }
 
+.inspiration-section {
+    margin: 6rem 0;
+}
+
+.inspiration-intro {
+    max-width: 900px;
+    margin: 0 auto 4rem auto;
+    text-align: center;
+}
+
+.inspiration-intro p {
+    font-size: 1.2rem;
+    line-height: 1.9;
+    color: #4a4a4a;
+    font-weight: 300;
+}
+
+.inspiration-dual-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.pinterest-cta {
+    background: linear-gradient(135deg, #f5f7fa 0%, #e8ebf0 100%);
+    padding: 3rem 2.5rem;
+    border: 2px solid #e8e8e8;
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.pinterest-cta:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.12);
+    border-color: #d4a574;
+}
+
+.pinterest-icon {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    opacity: 0.8;
+}
+
+.pinterest-cta h4 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.05em;
+}
+
+.pinterest-cta p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #666;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.pinterest-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #4a4a4a 0%, #d4a574 100%);
+    color: #ffffff;
+    padding: 1rem 2.5rem;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 16px rgba(102, 126, 234, 0.3);
+}
+
+.pinterest-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(102, 126, 234, 0.5);
+}
+
+.playlist-card {
+    background: #ffffff;
+    padding: 2.5rem;
+    border: 2px solid #e8e8e8;
+    border-radius: 12px;
+    transition: all 0.4s ease;
+}
+
+.playlist-card:hover {
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+    border-color: #d4a574;
+}
+
+.playlist-card h4 {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    color: #1a1a1a;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.05em;
+    text-align: center;
+}
+
+.media-placeholder {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    border-radius: 8px;
+    min-height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #d4a574;
+}
+
+.placeholder-text {
+    color: #666;
+    font-size: 1rem;
+    text-align: center;
+    padding: 2rem;
+    font-style: italic;
+}
+
+
+.media-placeholder iframe {
+    border-radius: 8px;
+    width: 100%;
+}
+
+
+@media (max-width: 768px) {
+    .inspiration-dual-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .inspiration-intro p {
+        font-size: 1.1rem;
+    }
+    
+    .pinterest-cta {
+        padding: 2.5rem 2rem;
+    }
+    
+    .playlist-card {
+        padding: 2rem;
+    }
+    
+    .media-placeholder {
+        min-height: 300px;
+    }
+}
+
 @media (max-width: 480px) {
-    nav {
-        padding: 1rem;
-    }
-    
-    .nav-links {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-    
-    .hero-simple {
-        padding: 2rem 1.5rem;
-    }
-    
-    .hero-simple h2 {
-        font-size: 2rem;
-    }
-    
-    .hero-simple p {
+    .inspiration-intro p {
         font-size: 1rem;
     }
     
-    .preview-grid,
-    .gallery,
-    .contact-info-simple {
+    .pinterest-cta {
+        padding: 2rem 1.5rem;
+    }
+    
+    .pinterest-icon {
+        font-size: 3rem;
+    }
+    
+    .pinterest-cta h4 {
+        font-size: 1.4rem;
+    }
+    
+    .pinterest-cta p {
+        font-size: 0.95rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .pinterest-btn {
+        padding: 0.9rem 2rem;
+        font-size: 0.9rem;
+    }
+    
+    .playlist-card {
+        padding: 1.5rem;
+    }
+    
+    .media-placeholder {
+        min-height: 250px;
+    }
+}
+.artwork-image {
+    height: 400px;
+    overflow: hidden;
+    background: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.artwork-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.gallery-item:hover .artwork-image img {
+    transform: scale(1.05);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+@media (max-width: 1024px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .artwork-image {
+        height: 350px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery {
         grid-template-columns: 1fr;
     }
     
-    .preview-box {
+    .artwork-image {
         height: 300px;
     }
-    
-    .artwork {
-        height: 280px;
-    }
-    
-    main {
-        padding: 1.5rem 1rem;
-    }
-    
-    .info-section {
-        padding: 1.5rem;
-    }
-    
-    .contact-form-simple,
-    .contact-side-info {
-        padding: 1.5rem;
-    }
+}
 
-    .section-heading {
-        font-size: 1.5rem; 
+.featured-photos {
+    margin: 6rem 0;
+}
+
+.photo-showcase {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.photo-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    aspect-ratio: 1/1;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+}
+
+.photo-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+.photo-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.photo-item:hover img {
+    transform: scale(1.1);
+}
+
+@media (max-width: 1024px) {
+    .photo-showcase {
+        grid-template-columns: repeat(2, 1fr);
     }
-    
+}
+
+@media (max-width: 480px) {
+    .photo-showcase {
+        grid-template-columns: 1fr;
+    }
+}
